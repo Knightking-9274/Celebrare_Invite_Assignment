@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:background="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Image / Icon"
+            android:textColor="#6C6565"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:layout_margin="10dp"
+        >
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#6C6565"
+        android:layout_margin="15dp"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoose"
+            android:layout_margin="10dp"
+            android:text="Choose from Device"
+            android:textColor="@color/white"
+            android:background="@drawable/btnshape"
+            android:backgroundTintMode="src_over"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgVIew1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>

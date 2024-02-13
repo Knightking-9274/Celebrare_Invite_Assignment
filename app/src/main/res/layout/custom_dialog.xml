@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    tools:context=".CustomDialog">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <!-- Close ImageButton in top right corner -->
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            android:layout_gravity="end"
+
+            android:padding="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Uploaded image TextView -->
+        <TextView
+            android:id="@+id/uploadedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Image"
+            android:textColor="#6C6565"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Image View -->
+        <ImageView
+            android:id="@+id/fragImageView"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Horizontal LinearLayout for buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_margin="15dp"
+            android:gravity="center_vertical">
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btnOriginal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+
+                android:text="Original"
+                android:background="@drawable/shape"/>
+
+            <!-- Button 2 -->
+            <ImageView android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:id="@+id/fragImgView1"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/user_image_frame_1"/>
+
+            <!-- Button 3 -->
+            <ImageView android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/fragImgView2"
+                android:src="@drawable/user_image_frame_2"/>
+            <ImageView android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fragImgView3"
+                android:src="@drawable/user_image_frame_3"/>
+            <ImageView android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:id="@+id/fragImgView4"
+                android:src="@drawable/user_image_frame_4"/>
+        </LinearLayout>
+
+        <!-- Bottom Button -->
+        <Button
+            android:id="@+id/btnUseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use this image"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+
+            />
+    </LinearLayout>
+</FrameLayout>
